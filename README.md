@@ -19,22 +19,28 @@ composer require larasoft-io/cookie-popup
 ### Publish package assets
 
 ```bash
-php artisan vendor:publish --provider="LarasoftIo\CookiePopup\ServiceProvider"
+php artisan vendor:publish --provider="LarasoftIo\CookiePopup\CookiePopupServiceProvider"
 ```
 
 ## Usage
+- Add \LarasoftIo\CookiePopup\Facades\CookiePopup in config/app.php aliases array:
+```
+'aliases' => [
+    ...,
+    'CookiePopup' => \LarasoftIo\CookiePopup\Facades\CookiePopup::class
+]
+```
 
-CHANGE ME
+- Include {!! CookiePopup::generate() !!} on your view to show popup. That's it.
+
+Update config/cookie-popup.php according to your needs.
 
 ## Security
 
-If you discover any security related issues, please email 
+If you discover any security related issues, please email
 instead of using the issue tracker.
 
 ## Credits
 
-- [](https://github.com/larasoft-io/cookie-popup)
+- [Larasoft.io](https://github.com/larasoft-io/cookie-popup)
 - [All contributors](https://github.com/larasoft-io/cookie-popup/graphs/contributors)
-
-This package is bootstrapped with the help of
-[melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).
