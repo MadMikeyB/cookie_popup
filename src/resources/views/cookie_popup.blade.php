@@ -14,7 +14,7 @@
         max-width: : 95%;
         height: {!! $height !!};
         width: {!! $width !!};
-        color: {!! $colour !!}
+        color: {!! $colour !!};
 
         @if($screen_position == 'bottom_right')
             right: 2%;
