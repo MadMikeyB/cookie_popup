@@ -1,9 +1,9 @@
 <span id="cookies-toast">
-    <span style="color: white; width: 85%; position: absolute">
+    <span style="color: {!! $colour !!}; width: 85%; position: absolute">
          {!! $text !!}
     <a href="{!! $cookie_policy_url !!}">{!! $url_text !!}</a>
     </span>
-    <span id="close-cookies-toast" style="color: white; width: 15%; position: absolute; right: 0; text-align: center; cursor:pointer; font-weight: bold; font-size: large">x</span>
+    <span id="close-cookies-toast" style="color: {!! $colour !!}; width: 15%; position: absolute; right: 0; text-align: center; cursor:pointer; font-weight: bold; font-size: large">x</span>
 </span>
 
 <style>
@@ -11,8 +11,10 @@
         position: fixed;
         display:block;
         bottom: 2em;
+        max-width: : 95%;
         height: {!! $height !!};
         width: {!! $width !!};
+        color: {!! $colour !!}
 
         @if($screen_position == 'bottom_right')
             right: 2%;
@@ -27,7 +29,6 @@
         @endif
 
         border-radius: {!! $border_radius !!};
-        color: white;
         text-align: left;
         padding: 1em;
         line-height: 2em;

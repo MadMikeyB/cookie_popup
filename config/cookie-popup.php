@@ -11,9 +11,11 @@ return [
 
     'colour_scheme' => ['#E9004B', '#FC318F'],       // first color is required, second color will make it gradient
 
+    'text_colour' => 'black',
+    
     'border_radius' => '3px',
 
     'width' => '30em',
 
-    'height' => '8.2em'
+    'height' => '9.4em'
 ];
