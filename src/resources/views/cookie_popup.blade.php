@@ -11,7 +11,7 @@
         position: fixed;
         display:block;
         bottom: 2em;
-        max-width: : 95%;
+        max-width: 95%;
         height: {!! $height !!};
         width: {!! $width !!};
         color: {!! $colour !!};
