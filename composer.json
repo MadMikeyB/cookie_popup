@@ -1,51 +1,49 @@
 {
-  "name": "larasoft-io/cookie-popup",
-  "description": "A cookie popup",
-  "license": "MIT",
-  "keywords": [
-    "cookie",
-    "popup"
-  ],
-  "type": "library",
-  "authors": [
-    {
-      "name": "Larasoft.io",
-      "email": "hello@larasoft.io",
-      "homepage": "https://larasoft.io/",
-      "role": "Developer"
+    "name": "larasoft-io/cookie-popup",
+    "description": "A cookie popup",
+    "license": "MIT",
+    "keywords": [
+        "cookie",
+        "popup"
+    ],
+    "type": "library",
+    "authors": [{
+        "name": "Larasoft.io",
+        "email": "hello@larasoft.io",
+        "homepage": "https://larasoft.io/",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": ">=7.0.0 || >=8.0.0",
+        "illuminate/support": "5.3.*||5.4.*||5.5.*||^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^8.4|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LarasoftIo\\CookiePopup\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LarasoftIo\\CookiePopup\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "phpunit": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LarasoftIo\\CookiePopup\\CookiePopupServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
-  ],
-  "require": {
-    "php": ">=7.0.0",
-    "illuminate/support": "5.3.*||5.4.*||5.5.*||^6.0|^7.0|^8.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^4.0|^5.0|^6.0",
-    "phpunit/phpunit": "^8.4|^9.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "LarasoftIo\\CookiePopup\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "LarasoftIo\\CookiePopup\\Tests\\": "tests"
-    }
-  },
-  "scripts": {
-    "phpunit": "phpunit"
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "LarasoftIo\\CookiePopup\\CookiePopupServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  }
 }
